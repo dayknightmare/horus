@@ -2,3 +2,12 @@
 //
 // The variables you want to modify
 // $font-size-root: 20px;
+
+.v-breadcrumbs li a {
+    color: white;
+}
+
+.v-list-item--active {
+    background-color: #0D1015 !important;
+    color: #ffffff !important;
+}

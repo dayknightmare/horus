@@ -31,14 +31,15 @@ const config: NuxtConfig = {
   axios: {
     baseURL: process.env.BACKEND_URL,
   },
+  css: ['~/assets/variables.scss'],
   vuetify: {
-    customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,
       themes: {
         dark: {
           background: "#0D1015",
-          primary: "#0D1015",
+          primary: "#1E1F24",
+          accent: "#FFFFFF",
           secondary: "#961B1B",
           info: "#26A69A",
           warning: "#FFC107",

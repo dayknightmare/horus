@@ -1,20 +1,33 @@
 <template>
   <v-navigation-drawer app permanent class="transparent">
-    <v-list dense>
-      <div style="float: right">
+    <v-list>
+      <div>
         <v-list-item v-for="menu in menuItems" :key="menu.title" :to="menu.url">
-          <template v-if="hasRole(menu.permission)" >
-            <!-- <v-list-item-icon></v-list-item-icon> -->
-
+          <template v-if="hasRole(menu.permission)">
             <v-list-item-content>
-              <v-list-item-title>
-                  {{ menu.title }}
+              <v-list-item-title class="text-h6 font-weight-light">
+                {{ menu.title }}
               </v-list-item-title>
             </v-list-item-content>
           </template>
         </v-list-item>
       </div>
     </v-list>
+
+    <template v-slot:append>
+      <v-menu>
+        <template v-slot:activator="{ on, attrs }">
+          <v-btn block color="primary" dark v-bind="attrs" v-on="on">
+            {{ userName }}
+          </v-btn>
+        </template>
+        <v-list>
+          <v-list-item @click="logout">
+            <v-list-item-title>Sair</v-list-item-title>
+          </v-list-item>
+        </v-list>
+      </v-menu>
+    </template>
   </v-navigation-drawer>
 </template>
   

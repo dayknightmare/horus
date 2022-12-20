@@ -1,12 +1,12 @@
 <template>
   <v-app dark>
-      <Menu class="pt-10"></Menu>
-      <v-main class="pt-10">
-        <v-container>
-          <Nuxt />
-        </v-container>
-      </v-main>
-    </v-app>
+    <Menu class="pt-10 px-2 pb-2"></Menu>
+    <v-main class="pt-10">
+      <v-container>
+        <Nuxt />
+      </v-container>
+    </v-main>
+  </v-app>
 </template>
 
 <script lang="ts">
