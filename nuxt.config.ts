@@ -37,9 +37,9 @@ const config: NuxtConfig = {
       dark: true,
       themes: {
         dark: {
-          primary: "#616161",
-          accent: "#424242",
-          secondary: "#FF8F00",
+          background: "#0D1015",
+          primary: "#0D1015",
+          secondary: "#961B1B",
           info: "#26A69A",
           warning: "#FFC107",
           error: "#DD2C00",
